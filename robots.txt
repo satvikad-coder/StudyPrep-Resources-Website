@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://satvikad-coder.github.io/StudyPrep-Resources-Website/sitemap.xml
