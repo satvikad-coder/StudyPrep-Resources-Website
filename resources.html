@@ -6,8 +6,7 @@
     <title>Resources | StudyPrep Resources</title>
     <link rel="stylesheet" href="resources.css" />
   </head>
-
-  <body>
+  <body class="resources-page">
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="nav-left">
@@ -22,10 +21,25 @@
       </div>
     </nav>
     <!-- TEXT-MAIN -->
-    <div class="text">
-      <div class="green-bg"></div>
-      <div class="title">Resources</div>
-    </div>
+    <section class="resources-hero">
+      <div class="flow-background" aria-hidden="true">
+        <div class="flow-object flow-object-one"></div>
+        <div class="flow-object flow-object-two"></div>
+        <div class="flow-highlight"></div>
+        <div class="flow-grain"></div>
+      </div>
+      <h1 class="resources-title" aria-label="Resources">
+        <span style="--i: 0">R</span>
+        <span style="--i: 1">e</span>
+        <span style="--i: 2">s</span>
+        <span style="--i: 3">o</span>
+        <span style="--i: 4">u</span>
+        <span style="--i: 5">r</span>
+        <span style="--i: 6">c</span>
+        <span style="--i: 7">e</span>
+        <span style="--i: 8">s</span>
+      </h1>
+    </section>
     <!-- BOXES RESOURCES -->
     <div class="resourceBox">
       <!-- RESOURCE1 -->
@@ -248,10 +262,10 @@
 
         <h3>Excelsior Learning Free SHSAT® Virtual Tutoring</h3>
         <p>
-          Excelsior Learning tutoring is offered by one of the StudyPrep Resources
-          creators! It offers free SHSAT tutoring from NYC tutors. Classes take
-          place on Mondays and Wednesdays EST). Make sure to sign up for
-          this exclusive summer tutoring opportunity!
+          Excelsior Learning tutoring is offered by one of the StudyPrep
+          Resources creators! It offers free SHSAT tutoring from NYC tutors.
+          Classes take place on Mondays and Wednesdays EST). Make sure to sign
+          up for this exclusive summer tutoring opportunity!
         </p>
       </a>
       <!-- RESOURCE9 -->
@@ -273,45 +287,45 @@
         </p>
       </a>
     </div>
+    <!-- FOOTER -->
     <footer class="site-footer">
-      <div class="footer-top">
-        <h2>Questions?</h2>
-        <button class="footer-btn">Send an Email!</button>
-        <p>…Thanks!</p>
+      <div class="footer-glow"></div>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">SPR<span>.</span></a>
+          <p>Free resources, training, and lessons for all.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="meettheteam.html">About</a>
+            <a href="mission.html">Mission</a>
+          </div>
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <a href="mailto:dudalasatvika@gmail.com">Email</a>
+          </div>
+        </div>
       </div>
 
-      <div class="footer-columns">
-        <div class="footer-col">
-          <h4>Mission</h4>
-          <p>SHSAT Prep</p>
-          <p>Math Practice</p>
-          <p>Reading Tools</p>
-          <p>StudyPrep Resources Mascot</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Services</h4>
-          <p>Test Prep</p>
-          <p>Study Guides</p>
-          <p>Practice Exams</p>
-          <p>Learning Tools</p>
-          <p>Student Support</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>About</h4>
-          <p>Our Team</p>
-          <p>Our Mission</p>
-          <p>Join Us</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Follow us</h4>
-          <p>Instagram</p>
-          <p>TikTok</p>
-          <p>SnapChat</p>
-        </div>
+      <div class="footer-bottom">
+        <p>
+          <span id="footer-year"></span>
+          Study Prep Resources.
+        </p>
       </div>
     </footer>
+    <script>
+      document.querySelector("#footer-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+  <script>
+    document.querySelector("#footer-year").textContent =
+      new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
   </body>
 </html>
