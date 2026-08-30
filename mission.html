@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="mission.css" />
   </head>
 
-  <body>
+  <body class="spotlight-page">
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="nav-left">
@@ -15,18 +15,36 @@
           <img src="images/realLOGO.png" alt="logo/home" class="logo" />
         </a>
       </div>
-
       <div class="nav-right">
         <a href="mission.html" class="nav-btn">Mission</a>
         <a href="resources.html" class="nav-btn">Resources</a>
         <a href="meettheteam.html" class="nav-btn">About Us</a>
       </div>
     </nav>
-
+    <div class="spotlight-background" aria-hidden="true">
+      <div class="spotlight-beam"></div>
+      <div class="spotlight-glow"></div>
+      <div class="spotlight-grain"></div>
+    </div>
     <!-- TEXT-MAIN -->
     <section class="mission-section">
       <div class="mission-left">
-        <h1 class="mission-title">Our Mission</h1>
+        <h1 class="mission-title" aria-label="Our Mission.">
+          <span style="--i: 0">O</span>
+          <span style="--i: 1">u</span>
+          <span style="--i: 2">r</span>
+
+          <span class="mission-space" style="--i: 3">&nbsp;</span>
+
+          <span style="--i: 4">M</span>
+          <span style="--i: 5">i</span>
+          <span style="--i: 6">s</span>
+          <span style="--i: 7">s</span>
+          <span style="--i: 8">i</span>
+          <span style="--i: 9">o</span>
+          <span style="--i: 10">n</span>
+          <span style="--i: 11">.</span>
+        </h1>
         <p class="mission-sub">
           We help students succeed through free, high‑quality learning tools.
         </p>
@@ -82,48 +100,39 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer class="site-footer">
-      <div class="footer-top">
-        <h2>Questions?</h2>
-        <button class="footer-btn">Send an Email!</button>
-        <p>…Thanks!</p>
+      <div class="footer-glow"></div>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">SPR<span>.</span></a>
+          <p>Free resources, training, and lessons for all.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="meettheteam.html">About</a>
+            <a href="mission.html">Mission</a>
+          </div>
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <a href="mailto:dudalasatvika@gmail.com">Email</a>
+          </div>
+        </div>
       </div>
 
-      <div class="footer-columns">
-        <div class="footer-col">
-          <h4>Mission</h4>
-          <p>SHSAT Prep</p>
-          <p>Math Practice</p>
-          <p>Reading Tools</p>
-          <p>StudyPrep Resources Mascot</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Services</h4>
-          <p>Test Prep</p>
-          <p>Study Guides</p>
-          <p>Practice Exams</p>
-          <p>Learning Tools</p>
-          <p>Student Support</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>About</h4>
-          <p>Our Team</p>
-          <p>Our Mission</p>
-          <p>Join Us</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Follow us</h4>
-          <p>Instagram</p>
-          <p>TikTok</p>
-          <p>SnapChat</p>
-        </div>
+      <div class="footer-bottom">
+        <p>
+          <span id="footer-year"></span>
+          Study Prep Resources.
+        </p>
       </div>
     </footer>
-
+    <script>
+      document.querySelector("#footer-year").textContent =
+        new Date().getFullYear();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
