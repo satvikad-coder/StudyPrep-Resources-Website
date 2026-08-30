@@ -27,7 +27,6 @@
   height: clamp(38px, 5vw, 50px);
   object-fit: contain;
 }
-
 .nav-right {
   display: flex;
   align-items: center;
