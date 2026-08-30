@@ -6,7 +6,6 @@ function runWhenReady(callback) {
     callback();
   }
 }
-
 function setFooterYear() {
   const footerYear = document.querySelector("#footer-year");
   if (footerYear) {
