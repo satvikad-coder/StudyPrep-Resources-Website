@@ -20,7 +20,6 @@
   backdrop-filter: blur(16px);
   box-sizing: border-box;
 }
-
 .logo {
   display: block;
   flex: 0 0 auto;
