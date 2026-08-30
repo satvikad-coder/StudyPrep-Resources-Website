@@ -1,4 +1,4 @@
-HTML: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,7 @@ HTML: <!DOCTYPE html>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
+    <!-- nav -->
     <nav class="navbar">
       <div class="nav-left">
         <a href="index.html">
@@ -21,69 +21,165 @@ HTML: <!DOCTYPE html>
         <a href="meettheteam.html" class="nav-btn">About Us</a>
       </div>
     </nav>
-    <!-- TEXT-MAIN -->
-    <div class="text">
-      <div class="blob blob1"></div>
-      <div class="blob blob2"></div>
-      <div class="blob blob3"></div>
-      <div class="title">StudyPrep Resources</div>
-    </div>
-    <h3 class="fade-scroll">Free Ways to Study for Exams.</h3>
-    <h5 class="fade-scroll">
-      Looking for a free way to study for your upcoming SHSAT or SAT? Here at
-      StudyPrep Resources, we help students prepare for their tests to get them that much
-      closer to a passing score. With us, you'll be able to let go of that pre
-      test stress as we teach you all the things you need to be prepared for
-      free! We offer many free resources on our resources page, but also suggest
-      paid ones.
-    </h5>
-    <h3 class="fade-scroll">Meet Your Mascot!</h3>
-    <img
-      src="images/realLOGO.png"
-      alt="StudyPrep Resources logo"
-      class="icons fade-scroll"
-    />
-    <h5 class="fade-scroll">
-      This is your StudyPrep Mascot! He is the mascot of the StudyPrep Resources website and
-      is always happy to help. While learning and studying for your exams, he will always be here to cheer you on! Thank you for using our
-      website. We hope to help you excel!
-    </h5>
-    <footer class="site-footer">
-      <div class="footer-top">
-        <h2>Questions?</h2>
-        <button class="footer-btn">Send an Email!</button>
-        <p>…Thanks!</p>
+
+    <!-- bg -->
+    <canvas id="bends"></canvas>
+    <div class="chrome-background"></div>
+    <main class="scroll-scene">
+      <div class="sticky-stage">
+        <!-- title -->
+        <section class="intro-panel">
+          <div class="heading-group">
+            <h1 class="fold-heading" aria-label="StudyPrep.">
+              <span style="--i: 0">S</span>
+              <span style="--i: 1">t</span>
+              <span style="--i: 2">u</span>
+              <span style="--i: 3">d</span>
+              <span style="--i: 4">y</span>
+              <span style="--i: 5">P</span>
+              <span style="--i: 6">r</span>
+              <span style="--i: 7">e</span>
+              <span style="--i: 8">p</span>
+              <span style="--i: 9">.</span>
+            </h1>
+            <h2 class="resources-heading" aria-label="Resources">
+              <span style="--i: 0">R</span>
+              <span style="--i: 1">e</span>
+              <span style="--i: 2">s</span>
+              <span style="--i: 3">o</span>
+              <span style="--i: 4">u</span>
+              <span style="--i: 5">r</span>
+              <span style="--i: 6">c</span>
+              <span style="--i: 7">e</span>
+              <span style="--i: 8">s</span>
+            </h2>
+          </div>
+        </section>
+        <!-- tuff image pop-in -->
+        <div class="visual-wrap">
+          <img
+            class="scene-image laptop-image"
+            src="laptop-neutral.png"
+            alt="laptop image"
+          />
+          <img
+            class="scene-image replacement-image"
+            src="images/realLOGO.png"
+            alt="StudyPrepResources Logo"
+          />
+        </div>
+        <!-- text contents -->
+        <article class="content-panel content-one">
+          <p class="eyebrow">Designed for Students, by students!</p>
+          <h2>Free Ways to Study for Exams.</h2>
+          <p class="p-details">
+            Looking for a free way to study for your upcoming SHSAT or SAT? Here
+            at StudyPrep Resources, we help students prepare for their tests to
+            get them that much closer to a passing score. With us, you'll be
+            able to let go of that pre test stress as we teach you all the
+            things you need to be prepared for free! We offer many free
+            resources on our resources page, but also suggest paid ones.
+          </p>
+        </article>
+        <article class="content-panel content-two">
+          <p class="eyebrow">StudyPrep Resources Logo</p>
+          <h2>Meet Your Mascot!</h2>
+          <p class="p-details">
+            This is your StudyPrep Mascot! He is the mascot of the StudyPrep
+            Resources website and is always happy to help. While learning and
+            studying for your exams, he will always be here to cheer you on!
+            Thank you for using our website. We hope to help you excel!
+          </p>
+        </article>
       </div>
-      <div class="footer-columns">
-        <div class="footer-col">
-          <h4>Mission</h4>
-          <p>SHSAT Prep</p>
-          <p>Math Practice</p>
-          <p>Reading Tools</p>
-          <p>StudyPrep Resources Mascot</p>
+    </main>
+    <!-- banner details/might delete -->
+    <div class="corner-loop corner-loop-top" aria-hidden="true">
+      <svg viewBox="0 0 700 240">
+        <defs>
+          <linearGradient id="top-loop-gradient" x1="0" x2="1">
+            <stop offset="0%" stop-color="#baffd3" />
+            <stop offset="45%" stop-color="#f7fff9" />
+            <stop offset="75%" stop-color="#ffd7e8" />
+            <stop offset="100%" stop-color="#baffd3" />
+          </linearGradient>
+          <path
+            id="top-loop-path"
+            d="M -120 120
+               C 30 25, 150 25, 290 120
+               S 545 215, 760 105"
+          />
+        </defs>
+        <use href="#top-loop-path" class="loop-ribbon top-ribbon" />
+        <text class="loop-text">
+          <textPath id="top-loop-text" href="#top-loop-path" startOffset="0%">
+            STUDYPREP ✦ RESOURCES ✦ STUDYPREP ✦ RESOURCES ✦ STUDYPREP ✦
+            RESOURCES ✦ STUDYPREP ✦ RESOURCES ✦
+          </textPath>
+        </text>
+      </svg>
+    </div>
+    <div class="corner-loop corner-loop-bottom" aria-hidden="true">
+      <svg viewBox="0 0 700 240">
+        <defs>
+          <linearGradient id="bottom-loop-gradient" x1="0" x2="1">
+            <stop offset="0%" stop-color="#ffd7e8" />
+            <stop offset="35%" stop-color="#ffffff" />
+            <stop offset="70%" stop-color="#baffd3" />
+            <stop offset="100%" stop-color="#ffd7e8" />
+          </linearGradient>
+          <path
+            id="bottom-loop-path"
+            d="M -120 120
+               C 30 25, 150 25, 290 120
+               S 545 215, 760 105"
+          />
+        </defs>
+        <use href="#bottom-loop-path" class="loop-ribbon bottom-ribbon" />
+
+        <text class="loop-text">
+          <textPath
+            id="bottom-loop-text"
+            href="#bottom-loop-path"
+            startOffset="-50%"
+          >
+            STUDYPREP ✦ RESOURCES ✦ STUDYPREP ✦ RESOURCES ✦ STUDYPREP ✦
+            RESOURCES ✦ STUDYPREP ✦ RESOURCES ✦
+          </textPath>
+        </text>
+      </svg>
+    </div>
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-glow"></div>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">SPR<span>.</span></a>
+          <p>Free resources, training, and lessons for all.</p>
         </div>
-        <div class="footer-col">
-          <h4>Services</h4>
-          <p>Test Prep</p>
-          <p>Study Guides</p>
-          <p>Practice Exams</p>
-          <p>Learning Tools</p>
-          <p>Student Support</p>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="index.html">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="meettheteam.html">About</a>
+            <a href="mission.html">Mission</a>
+          </div>
+          <div class="footer-column">
+            <h3>Connect</h3>
+            <a href="mailto:dudalasatvika@gmail.com">Email</a>
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>About</h4>
-          <p>Our Team</p>
-          <p>Our Mission</p>
-          <p>Join Us</p>
-        </div>
-        <div class="footer-col">
-          <h4>Follow us</h4>
-          <p>Instagram</p>
-          <p>TikTok</p>
-          <p>SnapChat</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p><span id="footer-year"></span> Study Prep Resources.</p>
       </div>
     </footer>
+    <!-- js connect -->
+    <script>
+      document.querySelector("#footer-year").textContent =
+        new Date().getFullYear();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
